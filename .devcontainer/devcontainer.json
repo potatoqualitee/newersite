@@ -39,7 +39,7 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install",
+	"postCreateCommand": "sudo mv /usr/local/lib/node_modules/npm/node_modules/latest-version/node_modules/package-json/index.js /usr/local/lib/node_modules/npm/node_modules/latest-version/node_modules/package-json/index.cjs && npm install",
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
